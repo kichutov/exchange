@@ -1,0 +1,45 @@
+create table app_user
+(
+    id       bigint primary key not null,
+    active   boolean not null,
+    password varchar(255),
+    username varchar(255)
+);
+
+create table currency
+(
+    id          varchar(255) primary key not null,
+    char_code   varchar(255),
+    name        varchar(255),
+    nominal     numeric(19, 2),
+    num_code    integer,
+    update_date date,
+    value       numeric(19, 2)
+);
+
+create table transaction
+(
+    id               bigint primary key not null,
+    source_amount    numeric(19, 2),
+    source_currency  varchar(255),
+    target_amount    numeric(19, 2),
+    target_currency  varchar(255),
+    transaction_date date,
+    user_id          bigint
+        constraint fkegwwjgvn1w2a7ce5b1v63ym4x
+            references app_user
+);
+
+create table user_role
+(
+    user_id bigint not null
+        constraint fkg7fr1r7o0fkk41nfhnjdyqn7b
+            references app_user,
+    roles   varchar(255)
+);
+
+
+
+
+
+
