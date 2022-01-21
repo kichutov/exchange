@@ -1,0 +1,91 @@
+* {
+    text-align: center;
+}
+
+body {
+    margin-top: 100px;
+}
+
+h1 {
+    margin-bottom: 50px;
+}
+
+.notification {
+    color: crimson;
+    margin: 10px 0;
+}
+
+.notification_blue {
+    color: dodgerblue;
+    margin: 10px 0;
+}
+
+.select1 {
+    grid-area: select1;
+}
+
+.select2 {
+    grid-area: select2;
+}
+
+.input1 {
+    grid-area: input1;
+}
+
+.input2 {
+    grid-area: input2;
+}
+
+.submit1 {
+    grid-area: submit1;
+    width: 200px;
+    margin: 0 auto 100px;
+}
+
+.exchange__form1 {
+    margin: 0 auto;
+    width: 50%;
+    display: grid;
+    gap: 20px;
+    grid-template-areas:
+    "select1 select2"
+    "input1 input2"
+    "submit1 submit1";
+}
+
+input {
+    margin: 10px 0px;
+}
+
+.exchange__form2 {
+    margin: 0 auto;
+    width: 50%;
+    gap: 20px;
+    display: grid;
+    grid-template-areas:
+    "input3 select3 select3 select4 select4"
+    "submit2 submit2 submit2 submit2 submit2";
+}
+
+.select3 {
+    grid-area: select3;
+}
+
+.select4 {
+    grid-area: select4;
+}
+
+.input3 {
+    grid-area: input3;
+}
+
+.submit2 {
+    grid-area: submit2;
+    width: 200px;
+    margin: 0 auto 20px;
+}
+
+table {
+    margin: 0 auto;
+    width: 50%;
+}
